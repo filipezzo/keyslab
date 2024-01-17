@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient {
+    background: linear-gradient(192deg, #051f40 -5.45%, #06425c 106%);
+  }
+  .input-bg {
+    background: #09090b;
+    border: 1.5px solid #27272a;
+  }
+
+  .input-focus {
+    border: 1.5px solid rgba(0, 158, 255, 0.4);
+    box-shadow: 0px 0px 0px 4px rgba(0, 168, 255, 0.1);
+  }
+  .color-primary {
+    color: #fafafa;
+  }
+  .color-secondary {
+    color: #a1a1aa;
+  }
+  .btn-bg {
+    background: #009eff;
+  }
+
+  .btn-text-color {
+    color: #09090b;
+  }
+}
