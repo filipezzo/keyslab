@@ -60,13 +60,16 @@ function SignInForm() {
         <p className="mb-2 mr-auto text-rose-500">{errors.password}</p>
       )}
 
-      <p className="color-secondary ml-auto w-full max-w-[140px] whitespace-nowrap text-sm underline">
+      <Link
+        to="/recuperar"
+        className="color-secondary ml-auto w-full max-w-[140px] whitespace-nowrap text-sm underline"
+      >
         Esqueci minha senha
-      </p>
+      </Link>
       <Button>Entrar na conta</Button>
       <p className="color-secondary text-sm">
         Ainda não tem conta?
-        <Link className=" ml-2 underline" to="/register">
+        <Link className=" ml-2 underline" to="/registrar">
           Registre-se.
         </Link>
       </p>
